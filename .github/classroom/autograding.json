@@ -1,0 +1,25 @@
+{
+  "tests": [
+    {
+      "name": "Basic (6 pts)",
+      "setup": "python -m pip install --upgrade pip && pip install pytest",
+      "run": "pytest -rP -m basic",
+      "timeout": 120000,
+      "maxScore": 6
+    },
+    {
+      "name": "Edge (3 pts)",
+      "setup": "",
+      "run": "pytest -rP -m edge",
+      "timeout": 120000,
+      "maxScore": 3
+    },
+    {
+      "name": "Bonus (1 pt)",
+      "setup": "",
+      "run": "pytest -rP -m bonus",
+      "timeout": 120000,
+      "maxScore": 1
+    }
+  ]
+}

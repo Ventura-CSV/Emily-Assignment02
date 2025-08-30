@@ -1,0 +1,20 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - uses: education/autograding@v1
