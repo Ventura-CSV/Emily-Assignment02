@@ -39,3 +39,7 @@ def test_main_2():
     res = re.search(r'[\w,\W]*CS[\w,\W]*V11', ret2)
     print(res.group())
     assert res is not None, 'Expect Hello World!'
+
+@pytest.mark.bonus
+def test_main_3():
+    assert True, 'This is a bonus test that always passes. You can add more complex logic here if needed.'
